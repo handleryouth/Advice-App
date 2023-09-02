@@ -6,7 +6,7 @@ import {
 } from '@src/types';
 import {Search, SearchDetail} from '@src/screens';
 import {NAVIGATION_OPTIONS, SCREEN_OPTIONS} from '@src/const';
-import {generateShowHeaderScreenTitle} from '@src/utils/screen';
+import {generateShowHeaderScreenTitle} from '@src/utils';
 
 export const SearchStack = createNativeStackNavigator<SearchStackParamList>();
 

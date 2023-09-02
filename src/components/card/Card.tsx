@@ -1,8 +1,7 @@
 import {View, StyleSheet} from 'react-native';
-import React, {ComponentProps} from 'react';
+import React from 'react';
 import {getColor} from '@src/utils';
-
-export type CardProps = ComponentProps<typeof View>;
+import {CardProps} from '@src/types';
 
 export default function Card({children, style, ...props}: CardProps) {
   return (

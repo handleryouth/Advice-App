@@ -1,7 +1,6 @@
+import React from 'react';
 import {Modal as NativeModal, StyleSheet, View} from 'react-native';
-import React, {ComponentProps} from 'react';
-
-export type BaseModalProps = ComponentProps<typeof NativeModal>;
+import {BaseModalProps} from '@src/types';
 
 export default function BaseModal({
   visible,

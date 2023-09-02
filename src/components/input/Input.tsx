@@ -1,8 +1,7 @@
 import {TextInput, StyleSheet} from 'react-native';
-import React, {ComponentProps} from 'react';
+import React from 'react';
 import {getColor, getFontFamily} from '@src/utils';
-
-export type InputProps = ComponentProps<typeof TextInput>;
+import {InputProps} from '@src/types';
 
 export default function Input({
   style,

@@ -1,8 +1,7 @@
-import React, {ComponentProps} from 'react';
+import React from 'react';
 import {Text as NativeText, StyleSheet} from 'react-native';
 import {getFontFamily} from '@src/utils';
-
-export type TextProps = ComponentProps<typeof NativeText>;
+import {TextProps} from '@src/types';
 
 export default function Text({style, children, ...props}: TextProps) {
   return (

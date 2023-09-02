@@ -1,8 +1,7 @@
 import {View} from 'react-native';
-import React, {ComponentProps} from 'react';
+import React from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-
-export type SafeAreaViewProps = ComponentProps<typeof View>;
+import {SafeAreaViewProps} from '@src/types';
 
 export default function SafeAreaView({children, style}: SafeAreaViewProps) {
   const insets = useSafeAreaInsets();

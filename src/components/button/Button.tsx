@@ -1,8 +1,7 @@
+import {ButtonProps} from '@src/types';
 import {getColor} from '@src/utils';
-import React, {ComponentProps} from 'react';
+import React from 'react';
 import {Pressable, StyleSheet, ViewStyle} from 'react-native';
-
-export type ButtonProps = ComponentProps<typeof Pressable>;
 
 export default function Button({children, style, ...props}: ButtonProps) {
   return (

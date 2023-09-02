@@ -1,13 +1,9 @@
 import React from 'react';
-import BaseModal from '../baseModal/BaseModal';
 import {StyleSheet} from 'react-native';
+import {ErrorModalProps} from '@src/types';
+import BaseModal from '../baseModal/BaseModal';
 import Text from '../../text/Text';
 import Button from '../../button/Button';
-
-export interface ErrorModalProps {
-  toggleCloseModal: () => void;
-  visible: boolean;
-}
 
 export default function ErrorModal({
   toggleCloseModal,

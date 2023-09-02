@@ -1,12 +1,7 @@
-import React, {ComponentProps} from 'react';
-import {ListRenderItem, FlatList as NativeFlatList} from 'react-native';
+import React from 'react';
+import {FlatList as NativeFlatList} from 'react-native';
 import LoadingIndicator from '../loadingIndicator/LoadingIndicator';
-
-export interface FlatListProps<T extends any>
-  extends ComponentProps<typeof NativeFlatList<T>> {
-  isLoading?: boolean;
-  renderItem: ListRenderItem<T>;
-}
+import {FlatListProps} from '@src/types';
 
 export default function FlatList<T extends any>({
   isLoading,

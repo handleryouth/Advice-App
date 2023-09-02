@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
-import React, {ReactNode} from 'react';
+import React, {useEffect} from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import {getColor} from '@src/utils';
+import {LayoutProps} from '@src/types';
 import SafeAreaView from '../safeAreaView/SafeAreaView';
 
-export interface LayoutProps {
-  children: ReactNode;
-}
-
 const Layout = ({children}: LayoutProps) => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return <SafeAreaView style={styles.container}>{children}</SafeAreaView>;
 };
 
